@@ -5,6 +5,12 @@ import instagram from "../assets/Instagram.svg";
 import twitter from "../assets/twitter.svg";
 import piggy from "../assets/piggy.svg";
 import boatSail from "../assets/boatSail.svg";
+import Fern from "../assets/Fern.svg";
+import FernBlur from "../assets/FernBlur.svg";
+import rightFern from "../assets/rightFern.svg";
+import waterLeaf from "../assets/waterLeaf.png";
+import VectorLeft from "../assets/VectorLeft.svg";
+import VectorUnderTxt from "../assets/VectorUnderTxt.svg";
 
 const Header = () => {
   return (
@@ -25,6 +31,27 @@ const Header = () => {
         <img src={boatSail} alt="boatSail" />
         <img src={twitter} alt="twitter" />
       </div>
+      <img src={Fern} alt="Fern" className="Fern" />
+      <img src={FernBlur} alt="FernBlur" className="FernBlur" />
+      <img src={rightFern} alt="rightFern" className="rightFern" />
+      <img src={waterLeaf} alt="waterLeaf" className="waterLeaf" />
+
+      <div className="headerTxt headertxtstyle">
+        <div>Let's give Jaguars </div>
+      </div>
+      <div className=" subtxt headertxtstyle">
+        <div>
+          <div>the </div>
+          <div>future </div>
+          <div>they deserve</div>
+        </div>
+      </div>
+      <img src={VectorLeft} alt="VectorLeft" className="VectorLeft" />
+      <img
+        src={VectorUnderTxt}
+        alt="VectorUnderTxt"
+        className="VectorUnderTxt"
+      />
     </HeaderStyle>
   );
 };

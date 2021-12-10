@@ -7,9 +7,10 @@ const App = () => {
   return (
     <AppStyle>
       <Header />
-      <div className="link1"></div>
+      <div className="link1">
+        <div></div>
+      </div>
       <Component2 />
-      asdasdf
     </AppStyle>
   );
 };
