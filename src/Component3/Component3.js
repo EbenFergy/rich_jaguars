@@ -1,5 +1,7 @@
 import React from "react";
 import Component3Style from "./Component3Style";
+import Carousel from "../Components/Carousel/Carousel";
+import Chart from "../Components/Chart/Chart";
 
 const Component3 = () => {
   return (
@@ -21,6 +23,23 @@ const Component3 = () => {
           </div>
         </div>
       </div>
+      <Carousel />
+      <div className="componentTxt">
+        <div className="Features">Features</div>
+        <div className="Roadmap">Roadmap</div>
+        <div className="topTxt">
+          One thing is certain, all our <br />
+          jags are special hecause this project gives <br />
+          back to the community and the world.
+        </div>
+        <div className="bottomTxt">
+          Yep! Thats right. We are very close to announcing a partnership with
+          one of the <br />
+          most prominent institutions focused on saving endangered jaguar
+          species.
+        </div>
+      </div>
+      <Chart />
     </Component3Style>
   );
 };

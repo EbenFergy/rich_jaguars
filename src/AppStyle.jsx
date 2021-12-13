@@ -5,6 +5,7 @@ const AppStyle = styled.div`
   height: 100vh;
   font-family: "Inter", sans-serif;
   /* border: 2px solid red; */
+  /* overflow: scroll; */
 
   * {
     box-sizing: border-box;
