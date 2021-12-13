@@ -13,6 +13,8 @@ const App = () => {
       <Component2 />
       <Link top={"130rem"} />
       <Component3 />
+      {/* Link top={"130rem"} />
+      <Component4 /> */}
     </AppStyle>
   );
 };

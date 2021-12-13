@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import leafs from "../../assets/leafs.svg";
-import hills from "../../assets/hills.svg";
 import chartBG from "../../assets/chartBG.svg";
 import ChartStyle from "./ChartStyle";
-import { CarouselWrapper, prev } from "react-pretty-carousel";
 
 const Chart = () => {
   const [display1, setDisplay1] = useState(false);
