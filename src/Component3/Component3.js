@@ -2,10 +2,12 @@ import React from "react";
 import Component3Style from "./Component3Style";
 import Carousel from "../Components/Carousel/Carousel";
 import Chart from "../Components/Chart/Chart";
+import Link from "../Components/Link/Link";
 
 const Component3 = () => {
   return (
     <Component3Style>
+      <Link bottom={"-26rem"} opacity={"0.4"} height={"40rem"} />
       <div className="component3Cont">
         <div className="heading padding">Features</div>
         <div className="writeUpCont">

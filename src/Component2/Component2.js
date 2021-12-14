@@ -4,10 +4,13 @@ import GlassCard from "../Components/GlassCard";
 import yellowJaguar from "../assets/yellowJaguar.png";
 import peachJaguar from "../assets/peachJaguar.png";
 import heart from "../assets/heart.svg";
+import Link from "../Components/Link/Link";
 
 const Component2 = () => {
   return (
     <Component2Style>
+      <Link bottom={"-25rem"} opacity={"0.98"} height={"40rem"} />
+
       <div className="component2txt headertxtstyle">
         <span>About</span> <br />
         To do this, we have <br />

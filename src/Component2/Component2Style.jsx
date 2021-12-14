@@ -8,6 +8,7 @@ const Component2Style = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 170%;
+  position: relative;
   /* border: 2px solid red; */
   /* margin-top: 0; */
 

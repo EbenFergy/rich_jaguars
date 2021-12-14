@@ -7,6 +7,7 @@ const Component3Style = styled.div`
   letter-spacing: -0.05em;
   padding-top: 5rem;
   width: 100%;
+  position: relative;
   /* height: 100vh; */
   background-image: url(${component3BG});
   background-position: cover;

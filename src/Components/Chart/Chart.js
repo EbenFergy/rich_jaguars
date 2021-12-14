@@ -4,7 +4,7 @@ import ChartStyle from "./ChartStyle";
 
 const Chart = () => {
   const [display1, setDisplay1] = useState(false);
-  const [display2, setDisplay2] = useState(false);
+  const [display2, setDisplay2] = useState(true);
   const [display3, setDisplay3] = useState(false);
   const [display4, setDisplay4] = useState(false);
 

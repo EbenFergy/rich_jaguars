@@ -11,10 +11,12 @@ import rightFern from "../assets/rightFern.svg";
 import waterLeaf from "../assets/waterLeaf.png";
 import VectorLeft from "../assets/VectorLeft.svg";
 import VectorUnderTxt from "../assets/VectorUnderTxt.svg";
+import Link from "../Components/Link/Link";
 
 const Header = () => {
   return (
     <HeaderStyle>
+      <Link bottom={"-25rem"} opacity={"1"} height={"40rem"} />
       <nav>
         <div className="nav-links">
           <img src={logo} alt="logo" />

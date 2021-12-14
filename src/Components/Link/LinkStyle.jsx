@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 const LinkStyle = styled.div`
   position: absolute;
-  top: ${(props) => props.top};
+  bottom: ${({ bottom }) => bottom};
+  left: -10%;
   z-index: 10;
   filter: blur(3rem);
-  /* border-radius: 50%;   */
+  opacity: ${({ opacity }) => opacity};
+  /* border-radius: 50%; */
   /* border: 2px solid yellow; */
-  width: 100%;
-  height: 40rem;
+  width: 120%;
+  height: ${({ height }) => height};
   background-color: rgba(6, 15, 15, 0.98);
 
   display: flex;

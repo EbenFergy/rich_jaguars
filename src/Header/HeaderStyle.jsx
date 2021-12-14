@@ -11,6 +11,7 @@ const HeaderStyle = styled.div`
   /* border: 2px solid red; */
   margin: 0;
   padding: 0;
+  position: relative;
 
   nav {
     display: flex;

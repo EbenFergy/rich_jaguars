@@ -1,9 +1,9 @@
 import React from "react";
 import LinkStyle from "./LinkStyle";
 
-const Link = ({ top }) => {
+const Link = ({ bottom, opacity, height }) => {
   return (
-    <LinkStyle top={top}>
+    <LinkStyle bottom={bottom} opacity={opacity} height={height}>
       <div></div>
     </LinkStyle>
   );
