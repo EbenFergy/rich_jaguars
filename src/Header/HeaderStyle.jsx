@@ -1,133 +1,29 @@
 import styled from "styled-components";
-import completeHeaderImg from "../assets/completeHeaderImgPng.png";
+import completeHeaderImg from "../assets/HeaderMainBG.png";
 
 const HeaderStyle = styled.div`
   background-color: #0a1626;
-  height: 141%;
+  height: 100vh;
   background-image: url(${completeHeaderImg});
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   /* border: 2px solid red; */
   margin: 0;
-  padding: 0;
-  position: relative;
+  padding-bottom: 4rem;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
-  nav {
-    display: flex;
-    color: #ffff;
-    background-color: rgba(10, 22, 38, 0.9);
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    transition: all 0.5s ease-in-out;
-    z-index: 50;
-    /* border: 2px solid green; */
-    font-size: 1.0625rem;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2.25rem;
-    /* border: 2px solid yellow; */
-
-    img {
-      margin-right: 4.3rem;
-    }
-
-    * {
-      cursor: pointer;
-    }
-    a {
-      color: #ffff;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #52cc83;
-    }
-  }
-
+  .nav-links,
+  .socialMedia,
   .connect_wallet {
-    color: #00fefe;
-    text-decoration: underline;
-    cursor: pointer;
-
-    :hover {
-      color: #00c2c2;
-    }
-  }
-
-  .socialMedia {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 5rem;
-    top: 6rem;
-    gap: 3rem;
-    z-index: 15;
-    img {
-      cursor: pointer;
-      :hover {
-        transform: scale(1.2);
-      }
-    }
-  }
-
-  .Fern {
-    position: absolute;
-    left: -50rem;
-    top: 9rem;
-    z-index: 15;
-  }
-
-  .FernBlur {
-    position: absolute;
-    left: -48rem;
-    top: 2rem;
-  }
-
-  .rightFern {
-    position: absolute;
-    right: 0;
-    top: 15rem;
-    height: 45rem;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .Fern {
-      left: -70rem;
-    }
-
-    .FernBlur {
-      left: -60rem;
-    }
-  }
-  @media only screen and (max-width: 850px) {
-    nav {
-      a {
-        display: none;
-      }
-    }
-  }
-
-  .waterLeaf {
-    position: absolute;
-    right: 0;
-    top: 10rem;
-    height: 70rem;
-    z-index: 13;
-    /* border: 2px solid red; */
+    display: none;
   }
 
   .headerTxt {
     font-family: "Poppins", sans-serif;
-    position: relative;
-    /* top: 45rem; */
-    z-index: 20;
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
@@ -138,58 +34,94 @@ const HeaderStyle = styled.div`
 
   .headertxtstyle {
     font-weight: 700;
-    font-size: 5.4rem;
-    line-height: 5.4rem;
+    font-size: 1.8rem;
+    /* line-height: 5.4rem; */
     letter-spacing: -0.05em;
     color: #ffff;
   }
 
   .subtxt {
-    position: relative;
-    /* top: 45rem; */
     display: flex;
     align-items: center;
     justify-content: center;
-    div {
-      display: flex;
-      gap: 1rem;
-
-      div:nth-child(1),
-      div:nth-child(3) {
-        position: relative;
-        z-index: 13;
-      }
-
-      div:nth-child(2) {
-        position: relative;
-        color: #52cc82;
-        z-index: 11;
-      }
+    /* border: 2px solid purple; */
+    span {
+      color: #52cc82;
+      margin: 0 0.5rem;
     }
   }
 
   .txtCont {
-    position: relative;
-    bottom: -80%;
+    width: 100%;
     /* border: 2px solid yellow; */
+    height: fit-content;
   }
 
-  .VectorLeft {
-    position: absolute;
-    top: 44rem;
-    z-index: 12;
+  @media only screen and (min-width: 460px) {
+    .headertxtstyle {
+      font-size: 2.5rem;
+    }
   }
 
-  .VectorUnderTxt {
-    position: absolute;
-    bottom: 10%;
-    z-index: 12;
-    width: clamp(100vw, 100%, 125rem);
+  @media only screen and (min-width: 600px) {
+    .headertxtstyle {
+      font-size: 2.8rem;
+    }
   }
 
-  @media only screen and (max-width: 1440px) {
-    .txtCont {
-      bottom: -72%;
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 3rem;
+
+    .headertxtstyle {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 110vh;
+    padding-bottom: 3rem;
+
+    .headertxtstyle {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding-bottom: 4rem;
+
+    .headertxtstyle {
+      font-size: 4.5rem;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    height: 140vh;
+    padding-bottom: 4rem;
+
+    .headertxtstyle {
+      font-size: 5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    height: 110vh;
+    padding-bottom: 6rem;
+
+    .headertxtstyle {
+      font-size: 6rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    height: 110vh;
+    padding-bottom: 5rem;
+
+    .headertxtstyle {
+      font-size: 7.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 2200px) {
+    .headertxtstyle {
+      font-size: 8.5rem;
     }
   }
 `;

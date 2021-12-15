@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import chartBG from "../../assets/chartBG.svg";
 import ChartStyle from "./ChartStyle";
 
 const Chart = () => {
@@ -40,7 +39,6 @@ const Chart = () => {
       display3={display3}
       display4={display4}
     >
-      <img src={chartBG} alt="chartBG" className="imgBG" />
       <div className="chart">
         <svg
           width="1608"

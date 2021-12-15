@@ -5,18 +5,13 @@ import instagram from "../assets/Instagram.svg";
 import twitter from "../assets/twitter.svg";
 import piggy from "../assets/piggy.svg";
 import boatSail from "../assets/boatSail.svg";
-import Fern from "../assets/Fern.svg";
-import FernBlur from "../assets/FernBlur.svg";
-import rightFern from "../assets/rightFern.svg";
-import waterLeaf from "../assets/waterLeaf.png";
-import VectorLeft from "../assets/VectorLeft.svg";
-import VectorUnderTxt from "../assets/VectorUnderTxt.svg";
-import Link from "../Components/Link/Link";
+
+// import Link from "../Components/Link/Link";
 
 const Header = () => {
   return (
     <HeaderStyle>
-      <Link bottom={"-25rem"} opacity={"1"} height={"40rem"} />
+      {/* <Link bottom={"-25rem"} opacity={"1"} height={"40rem"} /> */}
       <nav>
         <div className="nav-links">
           <img src={logo} alt="logo" />
@@ -38,29 +33,15 @@ const Header = () => {
         <img src={boatSail} alt="boatSail" />
         <img src={twitter} alt="twitter" />
       </div>
-      <img src={Fern} alt="Fern" className="Fern" />
-      <img src={FernBlur} alt="FernBlur" className="FernBlur" />
-      <img src={rightFern} alt="rightFern" className="rightFern" />
-      <img src={waterLeaf} alt="waterLeaf" className="waterLeaf" />
 
       <div className="txtCont">
         <div className="headerTxt headertxtstyle">
           <div>Let's give Jaguars </div>
         </div>
         <div className=" subtxt headertxtstyle">
-          <div>
-            <div>the </div>
-            <div>future </div>
-            <div>they deserve</div>
-          </div>
+          the <span> future </span> they deserve
         </div>
       </div>
-      <img src={VectorLeft} alt="VectorLeft" className="VectorLeft" />
-      <img
-        src={VectorUnderTxt}
-        alt="VectorUnderTxt"
-        className="VectorUnderTxt"
-      />
     </HeaderStyle>
   );
 };

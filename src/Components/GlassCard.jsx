@@ -52,6 +52,66 @@ const GlassCard = styled.div`
   .cardImg {
     margin-top: auto;
   }
+
+  @media only screen and (max-width: 1024px) {
+    border-radius: 30px;
+    height: 28rem;
+
+    .GlassCardHeader {
+      div:nth-child(1) {
+        span:nth-child(1) {
+          font-size: 0.7rem;
+        }
+
+        span:nth-child(2) {
+          font-size: 1.825rem;
+        }
+        span:nth-child(3) {
+          font-size: 0.7rem;
+        }
+      }
+
+      div:nth-child(2) {
+        font-size: 0.825rem;
+        img {
+          height: 1.0125rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    border-radius: 30px;
+    height: 26rem;
+  }
+  @media only screen and (max-width: 650px) {
+    height: 24rem;
+  }
+  @media only screen and (max-width: 600px) {
+    border-radius: 20px;
+    height: 22rem;
+
+    .GlassCardHeader {
+      div:nth-child(1) {
+        span:nth-child(2) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    border-radius: 20px;
+    height: 21rem;
+    width: 40rem;
+
+    .GlassCardHeader {
+      div:nth-child(1) {
+        span:nth-child(2) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 `;
 
 export default GlassCard;

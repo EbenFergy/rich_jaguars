@@ -3,20 +3,14 @@ import styled from "styled-components";
 const CarouselStyle = styled.div`
   margin-top: 4rem;
   position: relative;
-  z-index: 20;
   padding-left: 5%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 13.125rem;
+  /* margin-bottom: 13.125rem; */
 
   .cards {
-    width: clamp(5rem, 18vw, 17.2rem);
-  }
-
-  @media only screen and (max-width: 1440px) {
-    /* .cards {
-      width: 16rem;
-    } */
+    width: 8rem;
+    margin-right: 1rem;
   }
 
   .nextArrow {
@@ -26,6 +20,43 @@ const CarouselStyle = styled.div`
     margin-right: 3rem;
     cursor: pointer;
     padding: 2rem 0;
+  }
+
+  @media only screen and (min-width: 375px) {
+    .cards {
+      width: 10rem;
+    }
+  }
+  @media only screen and (min-width: 400px) {
+    .cards {
+      width: 11rem;
+    }
+  }
+  @media only screen and (min-width: 460px) {
+    .cards {
+      /* width: 13rem; */
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .cards {
+      width: 11rem;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .cards {
+      width: 12rem;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .cards {
+      width: 14rem;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .cards {
+      width: 15rem;
+    }
   }
 `;
 

@@ -71,9 +71,9 @@ const Cmp4CardStyle = styled.div`
 
     ${({ classes }) => (classes === "LIOR" ? "right:40vw; top:20rem; " : "")}
   
-  ${({ classes }) => (classes === "JEEROM" ? "right:28vw; " : "")}
+    ${({ classes }) => (classes === "JEEROM" ? "right:28vw; " : "")}
   
-  ${({ classes }) => (classes === "JUSTINA" ? "top:48rem;" : "")}
+    ${({ classes }) => (classes === "JUSTINA" ? "top:48rem;" : "")}
   }
 
   @media only screen and (max-width: 1050px) {
@@ -85,10 +85,15 @@ const Cmp4CardStyle = styled.div`
 
     ${({ classes }) => (classes === "LIOR" ? "right:45vw; top:15rem; " : "")}
   
-  ${({ classes }) => (classes === "JEEROM" ? "right:28vw; " : "")}
-  
-  ${({ classes }) => (classes === "JUSTINA" ? "top:45rem;" : "")}
+    ${({ classes }) => (classes === "JEEROM" ? "right:28vw; " : "")}
+    
+    ${({ classes }) => (classes === "JUSTINA" ? "top:45rem;" : "")}
   }
+
+  .image {
+    img {
+      width: 16rem;
+    }
   }
 `;
 export default Cmp4CardStyle;

@@ -1,17 +1,16 @@
 import React from "react";
 import Component3Style from "./Component3Style";
 import Carousel from "../Components/Carousel/Carousel";
-import Chart from "../Components/Chart/Chart";
-import Link from "../Components/Link/Link";
+// import Link from "../Components/Link/Link";
 
 const Component3 = () => {
   return (
     <Component3Style>
-      <Link bottom={"-26rem"} opacity={"0.4"} height={"40rem"} />
+      {/* <Link bottom={"-26rem"} opacity={"0.4"} height={"40rem"} /> */}
       <div className="component3Cont">
-        <div className="heading padding">Features</div>
+        <div className="heading ">Features</div>
         <div className="writeUpCont">
-          <div className="left padding">Rarity</div>
+          <div className="left ">Rarity</div>
           <div className="right">
             <div>
               No two Jaguarz are exactly alike, and each one of them can be
@@ -34,14 +33,13 @@ const Component3 = () => {
           jags are special hecause this project gives <br />
           back to the community and the world.
         </div>
-        <div className="bottomTxt">
+        <span className="bottomTxt">
           Yep! Thats right. We are very close to announcing a partnership with
           one of the <br />
           most prominent institutions focused on saving endangered jaguar
           species.
-        </div>
+        </span>
       </div>
-      <Chart />
     </Component3Style>
   );
 };

@@ -5,9 +5,11 @@ const CompFinaleStyle = styled.div`
   position: relative;
   background-color: #0a1626;
   background-image: url(${Component2BG});
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  height: fit-content;
 
   .blur {
     position: relative;
@@ -19,7 +21,7 @@ const CompFinaleStyle = styled.div`
       rgba(23, 41, 27, 0.8) 63.58%,
       rgba(0, 0, 0, 0.8) 98.16%
     );
-    height: 180vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,6 +33,7 @@ const CompFinaleStyle = styled.div`
   .curveCont {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -41,7 +44,6 @@ const CompFinaleStyle = styled.div`
       border-radius: 3.75rem;
       font-size: 1.25rem;
       letter-spacing: -0.05em;
-      position: relative;
       font-weight: 500;
       color: #ffff;
     }
@@ -58,6 +60,7 @@ const CompFinaleStyle = styled.div`
 
   .footerDown {
     display: flex;
+    flex-direction: column;
     gap: 6rem;
     color: #ffff;
   }

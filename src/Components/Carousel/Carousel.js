@@ -5,10 +5,11 @@ import rastaJaguar from "../../assets/rastaJaguar.png";
 import yellowcardJaguar from "../../assets/yellowcardJaguar.png";
 import CarouselStyle from "./CarouselStyel";
 import nextArrow from "../../assets/nextArrow.svg";
+
 const Carousel = () => {
   return (
     <CarouselStyle>
-      <CarouselWrapper items={5} mode="normal gallery" showControls={false}>
+      <CarouselWrapper mode="normal gallery" showControls={false}>
         <img src={capJaguar} alt="capJaguar" className="cards" />
         <img src={yellowcardJaguar} alt="yellowcardJaguar" className="cards" />
         <img src={rastaJaguar} alt="rastaJaguar" className="cards" />

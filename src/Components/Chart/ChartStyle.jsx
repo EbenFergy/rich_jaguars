@@ -1,39 +1,36 @@
 import styled from "styled-components";
+import chartBG from "../../assets/chartBG.svg";
 
 const ChartStyle = styled.div`
   position: relative;
+  background-color: #0a1626;
   /* border: 2px solid red; */
-
-  .imgBG {
-    width: 100%;
-  }
-
-  .innerCircle {
-    width: 1.1rem;
-    height: 1.1rem;
-    background: #52cc82;
-    border-radius: 50%;
-  }
+  min-height: 70vh;
+  height: fit-content;
+  background-image: url(${chartBG});
+  background-position: center 10vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
   .chart {
-    position: absolute;
-    top: -10%;
     width: 100%;
-    overflow: auto;
+    height: fit-content;
+    overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    /* border: 2px solid red; */
-    z-index: 15;
-  }
+    /* border: 2px solid yellow; */
 
-  @media only screen and (max-width: 1440px) {
-    .chart {
-      top: -15%;
+    svg {
+      transform: translateX(-10rem);
+      width: 220vw;
+      height: 100%;
+      white-space: nowrap;
+      /* border: 2px solid yellow; */
     }
-  }
-
-  svg {
-    width: 100%;
   }
 
   .comp1 {
@@ -79,6 +76,38 @@ const ChartStyle = styled.div`
   .comp4:focus {
     path {
       display: block;
+    }
+  }
+
+  @media only screen and (min-width: 460px) {
+  }
+
+  @media only screen and (min-width: 5000px) {
+    .chart {
+      width: 100%;
+      height: fit-content;
+    }
+
+    svg {
+      width: 100vw;
+      /* height: 100%; */
+    }
+  }
+  @media only screen and (min-width: 600px) {
+  }
+
+  @media only screen and (min-width: 768px) {
+    .chart {
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      /* border: 2px solid yellow; */
+
+      svg {
+        width: 100%;
+        transform: translateX(5rem);
+        /* border: 2px solid yellow; */
+      }
     }
   }
 `;

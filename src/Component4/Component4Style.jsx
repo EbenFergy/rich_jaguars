@@ -6,7 +6,7 @@ const Component4Style = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
   padding-left: 10rem;
 
   .member {
