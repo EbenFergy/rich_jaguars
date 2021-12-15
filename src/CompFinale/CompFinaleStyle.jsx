@@ -100,5 +100,12 @@ const CompFinaleStyle = styled.div`
       color: #00c2c2;
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    html,
+    body {
+      font-size: 100%;
+    }
+  }
 `;
 export default CompFinaleStyle;

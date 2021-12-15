@@ -10,7 +10,13 @@ const CarouselStyle = styled.div`
   margin-bottom: 13.125rem;
 
   .cards {
-    width: 17.2rem;
+    width: clamp(5rem, 18vw, 17.2rem);
+  }
+
+  @media only screen and (max-width: 1440px) {
+    /* .cards {
+      width: 16rem;
+    } */
   }
 
   .nextArrow {

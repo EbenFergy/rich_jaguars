@@ -20,12 +20,17 @@ const Header = () => {
       <nav>
         <div className="nav-links">
           <img src={logo} alt="logo" />
-          <div>ROARAwards</div>
-          <div>About</div>
-          <div>RoadMap</div>
-          <div>OurTeam</div>
+          <a href="https://sharp-bassi-e0d5fc.netlify.app/">ROARAwards</a>
+          <a href="https://sharp-bassi-e0d5fc.netlify.app/">About</a>
+          <a href="https://sharp-bassi-e0d5fc.netlify.app/">RoadMap</a>
+          <a href="https://sharp-bassi-e0d5fc.netlify.app/">OurTeam</a>
         </div>
-        <div className="connect_wallet">CONNECT WALLET</div>
+        <a
+          href="https://sharp-bassi-e0d5fc.netlify.app/"
+          className="connect_wallet"
+        >
+          CONNECT WALLET
+        </a>
       </nav>
       <div className="socialMedia">
         <img src={instagram} alt="instagram" />
@@ -38,14 +43,16 @@ const Header = () => {
       <img src={rightFern} alt="rightFern" className="rightFern" />
       <img src={waterLeaf} alt="waterLeaf" className="waterLeaf" />
 
-      <div className="headerTxt headertxtstyle">
-        <div>Let's give Jaguars </div>
-      </div>
-      <div className=" subtxt headertxtstyle">
-        <div>
-          <div>the </div>
-          <div>future </div>
-          <div>they deserve</div>
+      <div className="txtCont">
+        <div className="headerTxt headertxtstyle">
+          <div>Let's give Jaguars </div>
+        </div>
+        <div className=" subtxt headertxtstyle">
+          <div>
+            <div>the </div>
+            <div>future </div>
+            <div>they deserve</div>
+          </div>
         </div>
       </div>
       <img src={VectorLeft} alt="VectorLeft" className="VectorLeft" />

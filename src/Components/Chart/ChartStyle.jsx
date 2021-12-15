@@ -8,21 +8,6 @@ const ChartStyle = styled.div`
     width: 100%;
   }
 
-  .circles {
-    margin-right: 20rem;
-    border: 2px solid yellow;
-  }
-
-  .outerCircle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.8125rem;
-    height: 2.8125rem;
-    border: 1px solid #28e8ff;
-    border-radius: 50%;
-  }
-
   .innerCircle {
     width: 1.1rem;
     height: 1.1rem;
@@ -39,6 +24,12 @@ const ChartStyle = styled.div`
     box-sizing: border-box;
     /* border: 2px solid red; */
     z-index: 15;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .chart {
+      top: -15%;
+    }
   }
 
   svg {

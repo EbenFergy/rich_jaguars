@@ -42,8 +42,11 @@ const HeaderStyle = styled.div`
     * {
       cursor: pointer;
     }
-
-    div:hover {
+    a {
+      color: #ffff;
+      text-decoration: none;
+    }
+    a:hover {
       color: #52cc83;
     }
   }
@@ -94,6 +97,23 @@ const HeaderStyle = styled.div`
     height: 45rem;
   }
 
+  @media only screen and (max-width: 1024px) {
+    .Fern {
+      left: -70rem;
+    }
+
+    .FernBlur {
+      left: -60rem;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    nav {
+      a {
+        display: none;
+      }
+    }
+  }
+
   .waterLeaf {
     position: absolute;
     right: 0;
@@ -106,7 +126,7 @@ const HeaderStyle = styled.div`
   .headerTxt {
     font-family: "Poppins", sans-serif;
     position: relative;
-    top: 45rem;
+    /* top: 45rem; */
     z-index: 20;
     /* border: 2px solid red; */
     width: 100%;
@@ -126,7 +146,7 @@ const HeaderStyle = styled.div`
 
   .subtxt {
     position: relative;
-    top: 45rem;
+    /* top: 45rem; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +168,12 @@ const HeaderStyle = styled.div`
     }
   }
 
+  .txtCont {
+    position: relative;
+    bottom: -80%;
+    /* border: 2px solid yellow; */
+  }
+
   .VectorLeft {
     position: absolute;
     top: 44rem;
@@ -156,10 +182,15 @@ const HeaderStyle = styled.div`
 
   .VectorUnderTxt {
     position: absolute;
-    top: 25.5rem;
-    left: 2rem;
+    bottom: 10%;
     z-index: 12;
-    transform: rotate(5deg);
+    width: clamp(100vw, 100%, 125rem);
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .txtCont {
+      bottom: -72%;
+    }
   }
 `;
 
