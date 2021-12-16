@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderStyle from "./HeaderStyle";
 import logo from "../assets/logo.svg";
 import instagram from "../assets/Instagram.svg";
 import twitter from "../assets/twitter.svg";
 import piggy from "../assets/piggy.svg";
 import boatSail from "../assets/boatSail.svg";
-
+import harmburger from "../assets/harmburger.svg";
+import SideMenu from "./SideMenu";
 // import Link from "../Components/Link/Link";
 
 const Header = () => {
+  const [sideMenu, setSideMenu] = useState(false);
+  const sideMenuHandler = () => {
+    setSideMenu(true);
+  };
+
+  const closeMenu = () => {
+    setSideMenu(false);
+  };
   return (
     <HeaderStyle>
-      {/* <Link bottom={"-25rem"} opacity={"1"} height={"40rem"} /> */}
+      {/* <Link bottom={"-50rem"} opacity={"1"} height={"50rem"} /> */}
+      {sideMenu ? <SideMenu close={closeMenu} /> : null}
       <nav>
+        <img src={logo} alt="logo" />
+        <img
+          src={harmburger}
+          alt="logo"
+          className="harmburger"
+          onClick={sideMenuHandler}
+        />
         <div className="nav-links">
-          <img src={logo} alt="logo" />
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">ROARAwards</a>
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">About</a>
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">RoadMap</a>

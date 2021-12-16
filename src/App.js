@@ -6,11 +6,13 @@ import Component3 from "./Component3/Component3";
 import Component4 from "./Component4/Component4";
 import CompFinale from "./CompFinale/CompFinale";
 import Chart from "./Components/Chart/Chart";
+// import Link from "./Components/Link/Link";
 
 const App = () => {
   return (
     <AppStyle>
       <Header />
+
       <Component2 />
       <Component3 />
       <Chart />

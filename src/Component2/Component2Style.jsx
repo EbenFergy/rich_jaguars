@@ -19,6 +19,8 @@ const Component2Style = styled.div`
   gap: 2rem;
 
   .component2txt {
+    position: relative;
+    z-index: 15;
     /* border: 2px solid red; */
     font-weight: 700;
     font-size: 1.8rem;

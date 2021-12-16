@@ -2,7 +2,7 @@ import styled from "styled-components";
 import completeHeaderImg from "../assets/HeaderMainBG.png";
 
 const HeaderStyle = styled.div`
-  background-color: #0a1626;
+  background-color: rgb(10, 22, 38);
   height: 100vh;
   background-image: url(${completeHeaderImg});
   background-position: center bottom;
@@ -20,6 +20,23 @@ const HeaderStyle = styled.div`
   .socialMedia,
   .connect_wallet {
     display: none;
+  }
+
+  nav {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    z-index: 100;
+    /* border: 2px solid red; */
+    height: fit-content;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(10, 22, 38, 0.96);
+
+    .harmburger {
+      width: 1.5rem;
+    }
   }
 
   .headerTxt {
@@ -52,6 +69,8 @@ const HeaderStyle = styled.div`
   }
 
   .txtCont {
+    position: relative;
+    z-index: 15;
     width: 100%;
     /* border: 2px solid yellow; */
     height: fit-content;
@@ -75,6 +94,30 @@ const HeaderStyle = styled.div`
     .headertxtstyle {
       font-size: 3rem;
     }
+
+    nav {
+      padding: 2rem;
+      .harmburger {
+        display: none;
+      }
+    }
+
+    .nav-links,
+    /* .socialMedia, */
+    .connect_wallet {
+      display: flex;
+    }
+
+    .nav-links a {
+      margin-right: 1rem;
+      color: #ffff;
+      text-decoration: none;
+    }
+
+    .connect_wallet {
+      color: #ffff;
+      text-decoration: none;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
@@ -83,6 +126,10 @@ const HeaderStyle = styled.div`
 
     .headertxtstyle {
       font-size: 3.5rem;
+    }
+
+    nav {
+      font-size: 1.1rem;
     }
   }
 
@@ -100,6 +147,10 @@ const HeaderStyle = styled.div`
     .headertxtstyle {
       font-size: 5rem;
     }
+
+    nav {
+      font-size: 1.5rem;
+    }
   }
 
   @media only screen and (min-width: 1600px) {
@@ -108,6 +159,13 @@ const HeaderStyle = styled.div`
 
     .headertxtstyle {
       font-size: 6rem;
+    }
+
+    nav {
+      font-size: 2rem;
+    }
+    .nav-links a {
+      margin-right: 2.5rem;
     }
   }
   @media only screen and (min-width: 1800px) {

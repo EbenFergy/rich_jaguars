@@ -3,15 +3,16 @@ import styled from "styled-components";
 const LinkStyle = styled.div`
   position: absolute;
   bottom: ${({ bottom }) => bottom};
-  left: -10%;
   z-index: 10;
   filter: blur(3rem);
   opacity: ${({ opacity }) => opacity};
   /* border-radius: 50%; */
   /* border: 2px solid yellow; */
-  width: 120%;
+  max-width: 100%;
+
   height: ${({ height }) => height};
   background-color: rgba(6, 15, 15, 0.98);
+  overflow: hidden;
 
   display: flex;
   align-items: flex-start;
