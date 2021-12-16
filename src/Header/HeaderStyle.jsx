@@ -11,15 +11,29 @@ const HeaderStyle = styled.div`
   /* border: 2px solid red; */
   margin: 0;
   padding-bottom: 4rem;
-  /* position: relative; */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 
   .nav-links,
-  .socialMedia,
   .connect_wallet {
     display: none;
+  }
+
+  .socialMedia {
+    position: absolute;
+    right: 1rem;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+      width: 0.7rem;
+    }
   }
 
   nav {
@@ -91,12 +105,25 @@ const HeaderStyle = styled.div`
   @media only screen and (min-width: 768px) {
     padding-bottom: 3rem;
 
+    .socialMedia {
+      right: 2rem;
+      top: 6rem;
+      img {
+        width: 1rem;
+      }
+    }
+
+    .logooff {
+      display: none;
+    }
+
     .headertxtstyle {
       font-size: 3rem;
     }
 
     nav {
       padding: 2rem;
+      font-size: 14px;
       .harmburger {
         display: none;
       }
@@ -109,20 +136,17 @@ const HeaderStyle = styled.div`
     }
 
     .nav-links a {
-      margin-right: 1rem;
+      margin-left: 1rem;
       color: #ffff;
       text-decoration: none;
     }
-
-    .nav-links div {
-      width: 100%;
-      border: 0 0 1rem 0;
-      border: 1px solid #ffff;
+    .nav-links img {
+      margin-right: 2rem;
     }
 
     .connect_wallet {
-      color: #ffff;
-      text-decoration: none;
+      color: #00fefe;
+      text-decoration: underline;
     }
   }
 
@@ -130,12 +154,21 @@ const HeaderStyle = styled.div`
     height: 110vh;
     padding-bottom: 3rem;
 
+    .socialMedia {
+      right: 3rem;
+      top: 6rem;
+      gap: 1.5rem;
+      img {
+        width: 1.2rem;
+      }
+    }
+
     .headertxtstyle {
       font-size: 3.5rem;
     }
 
     nav {
-      font-size: 1.1rem;
+      /* font-size: 1rem; */
     }
   }
 
@@ -150,12 +183,21 @@ const HeaderStyle = styled.div`
     height: 140vh;
     padding-bottom: 4rem;
 
+    .socialMedia {
+      right: 3rem;
+      top: 6rem;
+      gap: 2rem;
+      img {
+        width: 1.5rem;
+      }
+    }
+
     .headertxtstyle {
       font-size: 5rem;
     }
 
     nav {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -168,7 +210,7 @@ const HeaderStyle = styled.div`
     }
 
     nav {
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
     .nav-links a {
       margin-right: 2.5rem;
@@ -177,6 +219,15 @@ const HeaderStyle = styled.div`
   @media only screen and (min-width: 1800px) {
     height: 110vh;
     padding-bottom: 5rem;
+
+    .socialMedia {
+      right: 4rem;
+      top: 6rem;
+      gap: 2rem;
+      img {
+        width: 2rem;
+      }
+    }
 
     .headertxtstyle {
       font-size: 7.5rem;

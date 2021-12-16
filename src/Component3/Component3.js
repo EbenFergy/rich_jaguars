@@ -5,7 +5,7 @@ import Carousel from "../Components/Carousel/Carousel";
 
 const Component3 = () => {
   return (
-    <Component3Style>
+    <Component3Style id="roadMap">
       {/* <Link bottom={"-26rem"} opacity={"0.4"} height={"40rem"} /> */}
       <div className="component3Cont">
         <div className="heading ">Features</div>
@@ -17,9 +17,9 @@ const Component3 = () => {
               officially owned by a single person on the Ethereum blockchain
             </div>
             <span>
-              Each Rich Jaguarz is are of kind and programmatizelly generated
-              from over 160 possibel traits, inclusing clothing, backgrounds,
-              expression, and more.
+              Each Rich Jaguarz is one of a kind and programmatically generated
+              from over 160 possible traits, including clothing, backgrounds,
+              expression and more.
             </span>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Component3 = () => {
         <div className="Roadmap">Roadmap</div>
         <div className="topTxt">
           One thing is certain, all our <br />
-          jags are special hecause this project gives <br />
+          jags are special because this project gives <br />
           back to the community and the world.
         </div>
         <span className="bottomTxt">

@@ -37,6 +37,17 @@ const SideMenuStyle = styled.div`
       color: #ffff;
       margin-bottom: 3rem;
     }
+
+    div {
+      width: 100%;
+
+      border: 0.5px solid rgba(255, 255, 255, 0.2);
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      /* border-bottom: none; */
+      margin-bottom: 3rem;
+    }
   }
 `;
 

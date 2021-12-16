@@ -23,7 +23,7 @@ const Header = () => {
       {/* <Link bottom={"-50rem"} opacity={"1"} height={"50rem"} /> */}
       {sideMenu ? <SideMenu close={closeMenu} /> : null}
       <nav>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="logooff" />
         <img
           src={harmburger}
           alt="logo"
@@ -31,13 +31,13 @@ const Header = () => {
           onClick={sideMenuHandler}
         />
         <div className="nav-links">
-          <a href="https://sharp-bassi-e0d5fc.netlify.app/">ROARAwards</a>
-          <div></div>
-          <a href="https://sharp-bassi-e0d5fc.netlify.app/">About</a>
-          <div></div>
-          <a href="https://sharp-bassi-e0d5fc.netlify.app/">RoadMap</a>
-          <div></div>
-          <a href="https://sharp-bassi-e0d5fc.netlify.app/">OurTeam</a>
+          <img src={logo} alt="logo" className="logo" />
+
+          <a href="#about">About</a>
+
+          <a href="#roadMap">RoadMap</a>
+
+          <a href="#ourTeam">OurTeam</a>
         </div>
         <a
           href="https://sharp-bassi-e0d5fc.netlify.app/"
@@ -47,17 +47,25 @@ const Header = () => {
         </a>
       </nav>
       <div className="socialMedia">
-        <img src={instagram} alt="instagram" />
-        <img src={piggy} alt="piggy" />
+        <a href="https://instagram.com/richjaguarz?utm_medium=copy_link">
+          <img src={instagram} alt="instagram" />
+        </a>
+        <a href="https://discord.gg/yv7mWFTb">
+          <img src={piggy} alt="piggy" />
+        </a>
+        {/* <a href="#"> */}
         <img src={boatSail} alt="boatSail" />
-        <img src={twitter} alt="twitter" />
+        {/* </a> */}
+        <a href="https://twitter.com/richjaguarz?t=qbP35khcSTr6C6qtMxde4g&s=09">
+          <img src={twitter} alt="twitter" />
+        </a>
       </div>
 
       <div className="txtCont">
         <div className="headerTxt headertxtstyle">
-          <div>Let's give Jaguars </div>
+          <div>Let's give Jaguarz </div>
         </div>
-        <div className=" subtxt headertxtstyle">
+        <div className=" subtxt headertxtstyle" >
           the <span> future </span> they deserve
         </div>
       </div>

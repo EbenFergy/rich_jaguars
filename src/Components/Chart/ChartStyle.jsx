@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import chartBG from "../../assets/chartBG.svg";
+// import chartBG from "../../assets/chartBG.svg";
 
 const ChartStyle = styled.div`
   position: relative;
@@ -7,10 +7,7 @@ const ChartStyle = styled.div`
   /* border: 2px solid red; */
   min-height: 70vh;
   height: fit-content;
-  background-image: url(${chartBG});
-  background-position: center 10vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -25,7 +22,7 @@ const ChartStyle = styled.div`
     /* border: 2px solid yellow; */
 
     svg {
-      transform: translateX(-10rem);
+      /* transform: translateX(-10rem); */
       width: 220vw;
       height: 100%;
       white-space: nowrap;
@@ -105,7 +102,7 @@ const ChartStyle = styled.div`
 
       svg {
         width: 100%;
-        transform: translateX(5rem);
+        /* transform: translateX(5rem); */
         /* border: 2px solid yellow; */
       }
     }

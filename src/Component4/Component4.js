@@ -4,7 +4,7 @@ import cmp4Cards from "../assets/cmp4Cards.png";
 
 const Component4 = () => {
   return (
-    <Component4Style>
+    <Component4Style id='ourTeam'>
       <div className="member">
         Member Introduction
         <h1>Our Team</h1>

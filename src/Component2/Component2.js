@@ -5,8 +5,11 @@ import Comp2Cards from "../assets/Comp2Cards.png";
 
 const Component2 = () => {
   return (
-    <Component2Style>
+    <Component2Style id="about">
       {/* <Link bottom={"-25rem"} opacity={"0.98"} height={"40rem"} /> */}
+      <div className="link">
+        <div></div>
+      </div>
 
       <div className="component2txt headertxtstyle">
         <span>About</span> <br />
@@ -19,8 +22,11 @@ const Component2 = () => {
           <img src={Comp2Cards} alt="Comp2Cards" />
         </div>
         <div>
-          Our Jaguarz are strong, athetic, cute, fun, and boy, are they the
-          kings of fashion
+          Our Jaguars are strong, athletic, cute, fun, and boy, are they kings
+          of fashion
+          <span>
+            <a href="www.richjaguarz.io">SEE THE ENTIRE COLLECTION</a>
+          </span>
         </div>
       </div>
     </Component2Style>

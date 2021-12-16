@@ -22,16 +22,25 @@ const CompFinale = () => {
             <div>Privacy Policy | Terms of Sale</div>
           </div>
           <div className="socialMedia">
-            <img src={instagram} alt="instagram" />
-            <img src={piggy} alt="piggy" />
+            <a href="https://instagram.com/richjaguarz?utm_medium=copy_link">
+              <img src={instagram} alt="instagram" />
+            </a>
+            <a href="https://discord.gg/yv7mWFTb">
+              <img src={piggy} alt="piggy" />
+            </a>
+            {/* <a href="#"> */}
             <img src={boatSail} alt="boatSail" />
-            <img src={twitter} alt="twitter" />
+            {/* </a> */}
+            <a href="https://twitter.com/richjaguarz?t=qbP35khcSTr6C6qtMxde4g&s=09">
+              <img src={twitter} alt="twitter" />
+            </a>
           </div>
           <div className="nav-links">
-            <div>ROARAwards</div>
-            <div>About</div>
-            <div>RoadMap</div>
-            <div>OurTeam</div>
+            <a href="#about">About</a>
+
+            <a href="#roadMap">RoadMap</a>
+
+            <a href="#ourTeam">OurTeam</a>
           </div>
           <div className="connect_wallet">CONNECT WALLET</div>
         </div>

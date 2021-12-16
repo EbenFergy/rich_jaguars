@@ -7,7 +7,7 @@ const Component2Style = styled.div`
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 150vh;
   height: fit-content;
   padding-bottom: 2rem;
   position: relative;
@@ -16,7 +16,37 @@ const Component2Style = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+
+  .link {
+    position: absolute;
+    top: -20%;
+    width: 100%;
+    height: 50%;
+    bottom: ;
+    z-index: 10;
+    filter: blur(3rem);
+    opacity: ;
+    /* border-radius: 50%; */
+    border: 2px solid yellow;
+    max-width: 100%;
+
+    height: ${({ height }) => height};
+    background-color: rgba(6, 15, 15, 0.98);
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    div {
+      background: rgba(0, 255, 100, 0.2);
+      height: 25%;
+      width: 40%;
+      filter: blur(4rem);
+    }
+  }
+
+  
 
   .component2txt {
     position: relative;
@@ -27,6 +57,7 @@ const Component2Style = styled.div`
     color: #ffff;
     width: 100%;
     text-align: center;
+    margin-bottom: 5rem;
 
     span {
       font-size: 1rem;
@@ -37,19 +68,42 @@ const Component2Style = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     color: #ffff;
+    padding: 0 4rem;
     line-height: 2rem;
     font-size: 1rem;
     font-weight: 400;
+    /* border: 2px solid yellow; */
     img {
-      width: 90%;
+      width: clamp(20rem, 80%, 30rem);
+      /* border: 2px solid red; */
     }
 
+    div:nth-child(1) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     div:nth-child(2) {
       width: 100%;
-      padding: 0 4rem;
       text-align: center;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      span{
+        font-size: 0.65rem;
+        
+
+        a{
+          color: #28E8FF;
+        }
+      }
     }
   }
 
@@ -60,6 +114,11 @@ const Component2Style = styled.div`
       span {
         font-size: 1.25rem;
       }
+    }
+
+    .Comp2Cards{
+      div:nth-child(2) {
+      padding: 0 2rem;
     }
   }
 
@@ -81,15 +140,29 @@ const Component2Style = styled.div`
       justify-content: center;
 
       div:nth-child(1) {
-        padding: 0 2rem;
+        /* padding: 0 2rem; */
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* border: 2px solid red; */
       }
       img {
-        width: 70vh;
+        width: clamp(22rem, 100%, 36rem);
       }
 
       div:nth-child(2) {
         text-align: left;
-        padding: 0 2rem;
+        /* padding: 0 2rem; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        span{
+          font-size: 0.9rem;
+        }
       }
     }
   }

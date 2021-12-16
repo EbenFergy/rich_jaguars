@@ -92,7 +92,12 @@ const CompFinaleStyle = styled.div`
       cursor: pointer;
     }
 
-    div:hover {
+    a {
+      text-decoration: none;
+      color: #ffff;
+    }
+
+    a:hover {
       color: #52cc83;
     }
   }

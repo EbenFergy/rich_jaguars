@@ -11,10 +11,12 @@ const SideMenu = ({ close }) => {
         x
       </div>
       <div className="links">
-        <a href="https://sharp-bassi-e0d5fc.netlify.app/">ROARAwards</a>
-        <a href="https://sharp-bassi-e0d5fc.netlify.app/">About</a>
-        <a href="https://sharp-bassi-e0d5fc.netlify.app/">RoadMap</a>
-        <a href="https://sharp-bassi-e0d5fc.netlify.app/">OurTeam</a>
+        <div></div>
+        <a href="#about">About</a>
+        <div></div>
+        <a href="#roadMap">RoadMap</a>
+        <div></div>
+        <a href="#ourTeam">OurTeam</a>
       </div>
     </SideMenuStyle>
   );
