@@ -26,7 +26,7 @@ const HeaderStyle = styled.div`
     position: fixed;
     inset: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 90;
     /* border: 2px solid red; */
     height: fit-content;
     padding: 1rem;
@@ -112,6 +112,12 @@ const HeaderStyle = styled.div`
       margin-right: 1rem;
       color: #ffff;
       text-decoration: none;
+    }
+
+    .nav-links div {
+      width: 100%;
+      border: 0 0 1rem 0;
+      border: 1px solid #ffff;
     }
 
     .connect_wallet {

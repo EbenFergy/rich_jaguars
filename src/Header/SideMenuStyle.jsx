@@ -12,7 +12,7 @@ const SideMenuStyle = styled.div`
   justify-content: space-between;
   padding: 1rem 2rem;
   align-items: center;
-  background-color: rgb(10, 22, 38);
+  background-color: rgb(10, 22, 38, 0.95);
 
   .close {
     /* border: 2px solid yellow; */
@@ -38,8 +38,6 @@ const SideMenuStyle = styled.div`
       margin-bottom: 3rem;
     }
   }
-
-  
 `;
 
 export default SideMenuStyle;

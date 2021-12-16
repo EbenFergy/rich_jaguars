@@ -2,6 +2,7 @@
   "name": "rich_jaguars",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://richjaguarz.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",

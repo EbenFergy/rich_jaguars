@@ -32,8 +32,11 @@ const Header = () => {
         />
         <div className="nav-links">
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">ROARAwards</a>
+          <div></div>
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">About</a>
+          <div></div>
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">RoadMap</a>
+          <div></div>
           <a href="https://sharp-bassi-e0d5fc.netlify.app/">OurTeam</a>
         </div>
         <a
