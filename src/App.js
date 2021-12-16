@@ -3,8 +3,8 @@ import AppStyle from "./AppStyle";
 import Header from "./Header/Header";
 import Component2 from "./Component2/Component2";
 import Component3 from "./Component3/Component3";
-// import Component4 from "./Component4/Component4";
-// import CompFinale from "./CompFinale/CompFinale";
+import Component4 from "./Component4/Component4";
+import CompFinale from "./CompFinale/CompFinale";
 import Chart from "./Components/Chart/Chart";
 
 const App = () => {
@@ -15,8 +15,8 @@ const App = () => {
       <Component3 />
       <Chart />
 
-      {/* <Component4 /> */}
-      {/* <CompFinale /> */}
+      <Component4 />
+      <CompFinale />
     </AppStyle>
   );
 };

@@ -17,7 +17,7 @@ const CompFinale = () => {
         <div className="footerDown">
           <div>
             <div>
-              <img src={footerLogo} alt="footerLogo" />
+              <img src={footerLogo} alt="footerLogo" className="footerLogo" />
             </div>
             <div>Privacy Policy | Terms of Sale</div>
           </div>
