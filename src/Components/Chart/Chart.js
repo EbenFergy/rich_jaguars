@@ -1,43 +1,43 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import ChartStyle from "./ChartStyle";
 
 const Chart = () => {
-  const [display1, setDisplay1] = useState(false);
-  const [display2, setDisplay2] = useState(true);
-  const [display3, setDisplay3] = useState(false);
-  const [display4, setDisplay4] = useState(false);
+  // const [display1, setDisplay1] = useState(false);
+  // const [display2, setDisplay2] = useState(true);
+  // const [display3, setDisplay3] = useState(false);
+  // const [display4, setDisplay4] = useState(false);
 
-  const display1Changer = () => {
-    setDisplay1(true);
-    setDisplay2(false);
-    setDisplay3(false);
-    setDisplay4(false);
-  };
-  const display2Changer = () => {
-    setDisplay1(false);
-    setDisplay2(true);
-    setDisplay3(false);
-    setDisplay4(false);
-  };
-  const display3Changer = () => {
-    setDisplay1(false);
-    setDisplay2(false);
-    setDisplay3(true);
-    setDisplay4(false);
-  };
-  const display4Changer = () => {
-    setDisplay1(false);
-    setDisplay2(false);
-    setDisplay3(false);
-    setDisplay4(true);
-  };
+  // const display1Changer = () => {
+  //   setDisplay1(true);
+  //   setDisplay2(false);
+  //   setDisplay3(false);
+  //   setDisplay4(false);
+  // };
+  // const display2Changer = () => {
+  //   setDisplay1(false);
+  //   setDisplay2(true);
+  //   setDisplay3(false);
+  //   setDisplay4(false);
+  // };
+  // const display3Changer = () => {
+  //   setDisplay1(false);
+  //   setDisplay2(false);
+  //   setDisplay3(true);
+  //   setDisplay4(false);
+  // };
+  // const display4Changer = () => {
+  //   setDisplay1(false);
+  //   setDisplay2(false);
+  //   setDisplay3(false);
+  //   setDisplay4(true);
+  // };
 
   return (
     <ChartStyle
-      display1={display1}
-      display2={display2}
-      display3={display3}
-      display4={display4}
+      // display1={display1}
+      // display2={display2}
+      // display3={display3}
+      // display4={display4}
     >
       <div className="chart">
         {/* <svg
