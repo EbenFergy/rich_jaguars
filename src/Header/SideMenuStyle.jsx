@@ -4,8 +4,9 @@ const SideMenuStyle = styled.div`
   position: fixed;
   top: 0;
   /* border: 2px solid green;  */
-  height: fit-content;
-  min-height: 60vh;
+  /* height: fit-content;
+  min-height: 60vh; */
+  height: clamp(60vh, fit-content, 28rem);
   width: 100vw;
   z-index: 100;
   display: flex;
