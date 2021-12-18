@@ -65,11 +65,11 @@ const SideMenuStyle = styled.div`
     justify-content: center;
 
     img {
-      width: 0.9rem;
+      width: 0.9rem;    
     }
 
     a {
-      margin-right: 1rem;
+      margin-right: 1.5rem;
     }
 
     a:nth-child(4) {

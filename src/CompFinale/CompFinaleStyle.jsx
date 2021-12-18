@@ -65,13 +65,17 @@ const CompFinaleStyle = styled.div`
   .footerDown {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 3rem;
     color: #ffff;
+    text-align: center;
   }
 
   .socialMedia {
     display: flex;
     /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
     img {
       cursor: pointer;

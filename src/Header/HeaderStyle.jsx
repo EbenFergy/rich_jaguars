@@ -22,6 +22,10 @@ const HeaderStyle = styled.div`
     display: none;
   }
 
+  .logooff {
+    width: 7rem;
+  }
+
   .socialMedia {
     position: absolute;
     right: 1rem;
@@ -49,10 +53,6 @@ const HeaderStyle = styled.div`
     display: flex;
     justify-content: space-between;
     background-color: rgba(10, 22, 38, 0.96);
-
-    .logooff {
-      width: 7rem;
-    }
 
     .harmburger {
       width: 1.5rem;
@@ -140,6 +140,7 @@ const HeaderStyle = styled.div`
     /* .socialMedia, */
     .connect_wallet {
       display: flex;
+      align-items: center;
     }
 
     .nav-links a {
@@ -149,6 +150,7 @@ const HeaderStyle = styled.div`
     }
     .nav-links img {
       margin-right: 2rem;
+      height: 1.5rem;
     }
 
     .connect_wallet {

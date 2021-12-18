@@ -26,18 +26,24 @@ const Header = () => {
         <img src={logo} alt="logo" className="logooff" />
         <img
           src={harmburger}
-          alt="logo"
+          alt="harmburger_menu"
           className="harmburger"
           onClick={sideMenuHandler}
         />
         <div className="nav-links">
           <img src={logo} alt="logo" className="logo" />
 
-          <a href="#about">About</a>
+          <a href="#about" className="navLinks">
+            About
+          </a>
 
-          <a href="#roadMap">RoadMap</a>
+          <a href="#roadMap" className="navLinks">
+            RoadMap
+          </a>
 
-          <a href="#ourTeam">OurTeam</a>
+          <a href="#ourTeam" className="navLinks">
+            OurTeam
+          </a>
         </div>
         <a href="https://richjaguarz.io" className="connect_wallet">
           CONNECT WALLET
