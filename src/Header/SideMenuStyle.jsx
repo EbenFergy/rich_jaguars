@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SideMenuStyle = styled.div`
   position: fixed;
   top: 0;
-  /* border: 2px solid green; */
+  /* border: 2px solid green;  */
   height: fit-content;
   min-height: 60vh;
   width: 100vw;
@@ -11,7 +11,7 @@ const SideMenuStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem 2rem 2rem;
   align-items: center;
   background-color: rgb(10, 22, 38, 0.95);
 
@@ -22,7 +22,7 @@ const SideMenuStyle = styled.div`
     color: #ffff;
     font-size: 1.5rem;
     align-self: flex-end;
-    margin: 0;
+    margin: 1rem 0;
   }
 
   .links {
@@ -33,33 +33,47 @@ const SideMenuStyle = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 
     a {
       text-decoration: none;
       color: #ffff;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
-    a:nth-child(5) {
-      margin-bottom: 0;
+    a:nth-child(7) {
+      text-decoration: underline;
+      color: #00fefe;
     }
-
     div {
-      width: 100%;
+      width: 50%;
 
-      border: 0.5px solid rgba(255, 255, 255, 0.2);
+      border: 0.5px solid rgba(255, 255, 255, 0.1);
       border-top: none;
       border-left: none;
       border-right: none;
       /* border-bottom: none; */
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 
-  .socialMedia {
-    border: 2px solid turquoise;
+  .socials {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 0.9rem;
+    }
+
+    a {
+      margin-right: 1rem;
+    }
+
+    a:nth-child(4) {
+      margin-right: 0;
+    }
   }
 `;
 

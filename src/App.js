@@ -10,7 +10,7 @@ import Chart from "./Components/Chart/Chart";
 
 const App = () => {
   return (
-    <AppStyle>
+    <AppStyle id="home">
       <Header />
 
       <Component2 />

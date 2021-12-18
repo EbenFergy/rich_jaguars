@@ -15,25 +15,35 @@ const SideMenu = ({ close }) => {
         x
       </div>
       <div className="links">
-        <a href="#about">About</a>
+        <a href="#about" onClick={closeMenu}>
+          About
+        </a>
         <div></div>
-        <a href="#roadMap">RoadMap</a>
+        <a href="#roadMap" onClick={closeMenu}>
+          RoadMap
+        </a>
         <div></div>
-        <a href="#ourTeam">OurTeam</a>
-        <div className="socialMedia">
-          <a href="https://instagram.com/richjaguarz?utm_medium=copy_link">
-            <img src={instagram} alt="instagram" />
-          </a>
-          <a href="https://discord.gg/yv7mWFTb">
-            <img src={piggy} alt="piggy" />
-          </a>
-          {/* <a href="#"> */}
+        <a href="#ourTeam" onClick={closeMenu}>
+          OurTeam
+        </a>
+        <div></div>
+        <a href="https://richjaguarz.io" className="connect">
+          CONNECT WALLET
+        </a>
+      </div>
+      <div className="socials">
+        <a href="https://instagram.com/richjaguarz?utm_medium=copy_link">
+          <img src={instagram} alt="instagram" />
+        </a>
+        <a href="https://discord.gg/yv7mWFTb">
+          <img src={piggy} alt="piggy" />
+        </a>
+        <a href="#home">
           <img src={boatSail} alt="boatSail" />
-          {/* </a> */}
-          <a href="https://twitter.com/richjaguarz?t=qbP35khcSTr6C6qtMxde4g&s=09">
-            <img src={twitter} alt="twitter" />
-          </a>
-        </div>
+        </a>
+        <a href="https://twitter.com/richjaguarz?t=qbP35khcSTr6C6qtMxde4g&s=09">
+          <img src={twitter} alt="twitter" />
+        </a>
       </div>
     </SideMenuStyle>
   );
