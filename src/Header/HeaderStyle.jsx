@@ -40,7 +40,7 @@ const HeaderStyle = styled.div`
 
   nav {
     position: fixed;
-    inset: 0;
+    top: 0;
     width: 100%;
     z-index: 90;
     /* border: 2px solid red; */
