@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ChartStyle from "./ChartStyle";
-import crown from "../../assets/crown.png";
+// import crown from "../../assets/crown.png";
 
 const Chart = () => {
   const [display1, setDisplay1] = useState(true);
