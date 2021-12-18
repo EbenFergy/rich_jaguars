@@ -18,6 +18,7 @@ const Header = () => {
   const closeMenu = () => {
     setSideMenu(false);
   };
+
   return (
     <HeaderStyle>
       {/* <Link bottom={"-50rem"} opacity={"1"} height={"50rem"} /> */}
@@ -50,16 +51,24 @@ const Header = () => {
         </a>
       </nav>
       <div className="socialMedia">
-        <a href="https://instagram.com/richjaguarz?utm_medium=copy_link">
+        <a
+          href="https://instagram.com/richjaguarz?utm_medium=copy_link"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={instagram} alt="instagram" />
         </a>
-        <a href="https://discord.gg/yv7mWFTb">
+        <a href="https://discord.gg/yv7mWFTb" target="_blank" rel="noreferrer">
           <img src={piggy} alt="piggy" />
         </a>
         {/* <a href="#"> */}
         <img src={boatSail} alt="boatSail" />
         {/* </a> */}
-        <a href="https://twitter.com/richjaguarz?t=qbP35khcSTr6C6qtMxde4g&s=09">
+        <a
+          href="https://twitter.com/richjaguarz?t=qbP35khcSTr6C6qtMxde4g&s=09"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={twitter} alt="twitter" />
         </a>
       </div>
