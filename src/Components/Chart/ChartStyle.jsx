@@ -20,6 +20,7 @@ const ChartStyle = styled.div`
     white-space: nowrap;
     box-sizing: border-box;
     /* border: 2px solid yellow; */
+    transition: all 0.5s ease-in-out;
 
     svg {
       /* transform: translateX(-10rem); */
@@ -31,47 +32,53 @@ const ChartStyle = styled.div`
   }
 
   .comp1 {
-    path {
+    .path1 {
       display: ${({ display1 }) => (display1 ? "block" : "none")};
     }
   }
+
   .comp1:hover,
   .comp1:focus {
-    path {
+    .path1 {
       display: block;
     }
   }
 
   .comp2 {
-    path {
+    .path2 {
       display: ${({ display2 }) => (display2 ? "block" : "none")};
     }
   }
+
   .comp2:hover,
   .comp2:focus {
-    path {
+    .path2 {
       display: block;
     }
   }
+
   .comp3 {
-    path {
+    .path3 {
       display: ${({ display3 }) => (display3 ? "block" : "none")};
     }
   }
+
   .comp3:hover,
   .comp3:focus {
-    path {
+    .path3 {
       display: block;
     }
   }
+
   .comp4 {
-    path {
+    .path4 {
       display: ${({ display4 }) => (display4 ? "block" : "none")};
     }
   }
+
   .comp4:hover,
   .comp4:focus {
-    path {
+    .path4 {
       display: block;
     }
   }

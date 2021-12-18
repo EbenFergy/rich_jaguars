@@ -5,7 +5,7 @@ import Carousel from "../Components/Carousel/Carousel";
 
 const Component3 = () => {
   return (
-    <Component3Style id="roadMap">
+    <Component3Style >
       {/* <Link bottom={"-26rem"} opacity={"0.4"} height={"40rem"} /> */}
       <div className="component3Cont">
         <div className="heading ">Features</div>
@@ -25,7 +25,7 @@ const Component3 = () => {
         </div>
       </div>
       <Carousel />
-      <div className="componentTxt">
+      <div className="componentTxt" id="roadMap">
         <div className="Features">Features</div>
         <div className="Roadmap">Roadmap</div>
         <div className="topTxt">

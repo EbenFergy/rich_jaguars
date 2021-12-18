@@ -39,10 +39,7 @@ const Header = () => {
 
           <a href="#ourTeam">OurTeam</a>
         </div>
-        <a
-          href="https://sharp-bassi-e0d5fc.netlify.app/"
-          className="connect_wallet"
-        >
+        <a href="https://richjaguarz.io" className="connect_wallet">
           CONNECT WALLET
         </a>
       </nav>
@@ -65,7 +62,7 @@ const Header = () => {
         <div className="headerTxt headertxtstyle">
           <div>Let's give Jaguarz </div>
         </div>
-        <div className=" subtxt headertxtstyle" >
+        <div className=" subtxt headertxtstyle">
           the <span> future </span> they deserve
         </div>
       </div>
