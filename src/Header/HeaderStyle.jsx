@@ -44,7 +44,7 @@ const HeaderStyle = styled.div`
     width: 100%;
     z-index: 90;
     /* border: 2px solid red; */
-    height: fit-content;
+    height: 4rem;
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
