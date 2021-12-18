@@ -787,7 +787,7 @@ const Chart = () => {
             </clipPath>
           </defs>
         </svg>
-        <img src={crown} alt={crown} className="crown" />
+        {/* <img src={crown} alt={crown} className="crown" /> */}
       </div>
     </ChartStyle>
   );
