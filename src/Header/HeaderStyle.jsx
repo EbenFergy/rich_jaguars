@@ -3,7 +3,9 @@ import completeHeaderImg from "../assets/HeaderMainBG.png";
 
 const HeaderStyle = styled.div`
   background-color: rgb(10, 22, 38);
-  height: 100vh;
+  min-height: 90vh;
+
+  height: fit-content;
   background-image: url(${completeHeaderImg});
   background-position: center bottom;
   background-repeat: no-repeat;

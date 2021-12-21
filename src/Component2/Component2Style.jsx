@@ -7,7 +7,7 @@ const Component2Style = styled.div`
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 150vh;
+  min-height: 100vh;
   height: fit-content;
   padding-bottom: 2rem;
   position: relative;
@@ -65,6 +65,8 @@ const Component2Style = styled.div`
   }
 
   .Comp2Cards {
+    position: relative;
+    z-index: 15;
     display: flex;
     flex-direction: column;
     align-items: center;
