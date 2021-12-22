@@ -30,7 +30,7 @@ const Component4Style = styled.div`
     height: 50%;
   }
   .cmp4Cards {
-    height: 30rem;
+    max-width: 95vw;
     /* border: 2px solid yellow; */
   }
 
