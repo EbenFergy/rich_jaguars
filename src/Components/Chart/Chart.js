@@ -10,30 +10,62 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  switch (action.type) {
+  switch (action) {
     case "DISPLAY1":
       return {
-        ...state,
-        display1: action.value,
+        display1: true,
+        display2: false,
+        display3: false,
+        display4: false,
       };
     case "DISPLAY2":
       return {
-        ...state,
-        display2: action.value,
+        display1: false,
+        display2: true,
+        display3: false,
+        display4: false,
       };
     case "DISPLAY3":
       return {
-        ...state,
-        display3: action.value,
+        display1: false,
+        display2: false,
+        display3: true,
+        display4: false,
       };
     case "DISPLAY4":
       return {
-        ...state,
-        display4: action.value,
+        display1: false,
+        display2: false,
+        display3: false,
+        display4: true,
       };
     default:
       return state;
   }
+  // switch (action.type) {
+  //   case "DISPLAY1":
+  //     return {
+  //       ...state,
+  //       display1: action.value,
+  //     };
+  //   case "DISPLAY2":
+  //     return {
+  //       ...state,
+  //       display2: action.value,
+  //     };
+  //   case "DISPLAY3":
+  //     return {
+  //       ...state,
+  //       display3: action.value,
+  //     };
+  //   case "DISPLAY4":
+  //     return {
+  //       ...state,
+  //       display4: action.value,
+  //     };
+  //   default:
+  //     return state;
+  // }
 };
 
 const Chart = () => {
@@ -41,34 +73,34 @@ const Chart = () => {
 
   const display1Changer = () => {
     console.log("clicked Phase 1 ....");
-    dispatch({ type: "DISPLAY1", value: true });
-    dispatch({ type: "DISPLAY2", value: false });
-    dispatch({ type: "DISPLAY3", value: false });
-    dispatch({ type: "DISPLAY4", value: false });
+    dispatch("DISPLAY1");
+    // dispatch({ type: "DISPLAY2", value: false });
+    // dispatch({ type: "DISPLAY3", value: false });
+    // dispatch({ type: "DISPLAY4", value: false });
   };
   const display2Changer = () => {
     console.log("clicked Phase 2 ....");
 
-    dispatch({ type: "DISPLAY1", value: false });
-    dispatch({ type: "DISPLAY2", value: true });
-    dispatch({ type: "DISPLAY3", value: false });
-    dispatch({ type: "DISPLAY4", value: false });
+    // dispatch({ type: "DISPLAY1", value: false });
+    dispatch("DISPLAY2");
+    // dispatch({ type: "DISPLAY3", value: false });
+    // dispatch({ type: "DISPLAY4", value: false });
   };
   const display3Changer = () => {
     console.log("clicked Phase 3 ....");
 
-    dispatch({ type: "DISPLAY1", value: false });
-    dispatch({ type: "DISPLAY2", value: false });
-    dispatch({ type: "DISPLAY3", value: true });
-    dispatch({ type: "DISPLAY4", value: false });
+    // dispatch({ type: "DISPLAY1", value: false });
+    // dispatch({ type: "DISPLAY2", value: false });
+    dispatch("DISPLAY3");
+    // dispatch({ type: "DISPLAY4", value: false });
   };
   const display4Changer = () => {
     console.log("clicked Phase 4 ....");
 
-    dispatch({ type: "DISPLAY1", value: false });
-    dispatch({ type: "DISPLAY2", value: false });
-    dispatch({ type: "DISPLAY3", value: false });
-    dispatch({ type: "DISPLAY4", value: true });
+    // dispatch({ type: "DISPLAY1", value: false });
+    // dispatch({ type: "DISPLAY2", value: false });
+    // dispatch({ type: "DISPLAY3", value: false });
+    dispatch("DISPLAY4");
   };
 
   return (
