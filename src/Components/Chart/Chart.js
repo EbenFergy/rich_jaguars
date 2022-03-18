@@ -40,55 +40,35 @@ const Chart = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const display1Changer = () => {
+    console.log("clicked Phase 1 ....");
     dispatch({ type: "DISPLAY1", value: true });
     dispatch({ type: "DISPLAY2", value: false });
     dispatch({ type: "DISPLAY3", value: false });
     dispatch({ type: "DISPLAY4", value: false });
-
-    console.log("clicked 1");
-    console.log("display1", state.display1);
-    console.log("display2", state.display2);
-    console.log("display3", state.display3);
-    console.log("display4", state.display4);
   };
   const display2Changer = () => {
+    console.log("clicked Phase 2 ....");
+
     dispatch({ type: "DISPLAY1", value: false });
     dispatch({ type: "DISPLAY2", value: true });
     dispatch({ type: "DISPLAY3", value: false });
     dispatch({ type: "DISPLAY4", value: false });
-
-    console.log("clicked 2");
-
-    console.log("display1", state.display1);
-    console.log("display2", state.display2);
-    console.log("display3", state.display3);
-    console.log("display4", state.display4);
   };
   const display3Changer = () => {
+    console.log("clicked Phase 3 ....");
+
     dispatch({ type: "DISPLAY1", value: false });
     dispatch({ type: "DISPLAY2", value: false });
     dispatch({ type: "DISPLAY3", value: true });
     dispatch({ type: "DISPLAY4", value: false });
-
-    console.log("clicked 3");
-
-    console.log("display1", state.display1);
-    console.log("display2", state.display2);
-    console.log("display3", state.display3);
-    console.log("display4", state.display4);
   };
   const display4Changer = () => {
+    console.log("clicked Phase 4 ....");
+
     dispatch({ type: "DISPLAY1", value: false });
     dispatch({ type: "DISPLAY2", value: false });
     dispatch({ type: "DISPLAY3", value: false });
     dispatch({ type: "DISPLAY4", value: true });
-
-    console.log("clicked 4");
-
-    console.log("display1", state.display1);
-    console.log("display2", state.display2);
-    console.log("display3", state.display3);
-    console.log("display4", state.display4);
   };
 
   return (
