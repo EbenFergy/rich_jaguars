@@ -1,44 +1,102 @@
-import React, { useState } from "react";
+import React, { useReducer } from "react";
 import ChartStyle from "./ChartStyle";
 // import crown from "../../assets/crown.png";
 
+const initialState = {
+  display1: true,
+  display2: false,
+  display3: false,
+  display4: false,
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "DISPLAY1":
+      return {
+        ...state,
+        display1: action.value,
+      };
+    case "DISPLAY2":
+      return {
+        ...state,
+        display2: action.value,
+      };
+    case "DISPLAY3":
+      return {
+        ...state,
+        display3: action.value,
+      };
+    case "DISPLAY4":
+      return {
+        ...state,
+        display4: action.value,
+      };
+    default:
+      return state;
+  }
+};
+
 const Chart = () => {
-  const [display1, setDisplay1] = useState(true);
-  const [display2, setDisplay2] = useState(false);
-  const [display3, setDisplay3] = useState(false);
-  const [display4, setDisplay4] = useState(false);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const display1Changer = () => {
-    setDisplay1(true);
-    setDisplay2(false);
-    setDisplay3(false);
-    setDisplay4(false);
+    dispatch({ type: "DISPLAY1", value: true });
+    dispatch({ type: "DISPLAY2", value: false });
+    dispatch({ type: "DISPLAY3", value: false });
+    dispatch({ type: "DISPLAY4", value: false });
+
+    console.log("clicked 1");
+    console.log("display1", state.display1);
+    console.log("display2", state.display2);
+    console.log("display3", state.display3);
+    console.log("display4", state.display4);
   };
   const display2Changer = () => {
-    setDisplay1(false);
-    setDisplay2(true);
-    setDisplay3(false);
-    setDisplay4(false);
+    dispatch({ type: "DISPLAY1", value: false });
+    dispatch({ type: "DISPLAY2", value: true });
+    dispatch({ type: "DISPLAY3", value: false });
+    dispatch({ type: "DISPLAY4", value: false });
+
+    console.log("clicked 2");
+
+    console.log("display1", state.display1);
+    console.log("display2", state.display2);
+    console.log("display3", state.display3);
+    console.log("display4", state.display4);
   };
   const display3Changer = () => {
-    setDisplay1(false);
-    setDisplay2(false);
-    setDisplay3(true);
-    setDisplay4(false);
+    dispatch({ type: "DISPLAY1", value: false });
+    dispatch({ type: "DISPLAY2", value: false });
+    dispatch({ type: "DISPLAY3", value: true });
+    dispatch({ type: "DISPLAY4", value: false });
+
+    console.log("clicked 3");
+
+    console.log("display1", state.display1);
+    console.log("display2", state.display2);
+    console.log("display3", state.display3);
+    console.log("display4", state.display4);
   };
   const display4Changer = () => {
-    setDisplay1(false);
-    setDisplay2(false);
-    setDisplay3(false);
-    setDisplay4(true);
+    dispatch({ type: "DISPLAY1", value: false });
+    dispatch({ type: "DISPLAY2", value: false });
+    dispatch({ type: "DISPLAY3", value: false });
+    dispatch({ type: "DISPLAY4", value: true });
+
+    console.log("clicked 4");
+
+    console.log("display1", state.display1);
+    console.log("display2", state.display2);
+    console.log("display3", state.display3);
+    console.log("display4", state.display4);
   };
 
   return (
     <ChartStyle
-      display1={display1}
-      display2={display2}
-      display3={display3}
-      display4={display4}
+      display1={state.display1}
+      display2={state.display2}
+      display3={state.display3}
+      display4={state.display4}
     >
       <div className="chart">
         <svg
